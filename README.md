@@ -42,6 +42,7 @@ Send a POST request to the /joinDataframes endpoint with the input dataframes.
 
 For example:
 
+```
 import requests
 
 url = 'http://192.168.1.94:5001/joinDataframes'
@@ -74,6 +75,8 @@ headers = {'Content-Type': 'application/json'}
 response = requests.post(url, json=data, headers=headers)
 
 print(response.json())
+
+```
 
 The API will perform the join operation on the specified common column and return the resulting joined dataframe as the response.
 

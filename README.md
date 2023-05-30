@@ -80,4 +80,31 @@ print(response.json())
 
 The API will perform the join operation on the specified common column and return the resulting joined dataframe as the response.
 
+# Testing the API Endpoint using cURL
+```
+curl -X POST -H "Content-Type: application/json" -d '{
+  "dataframe1": [
+    {
+      "id": 1,
+      "name": "John"
+    },
+    {
+      "id": 2,
+      "name": "Jane"
+    }
+  ],
+  "dataframe2": [
+    {
+      "id": 1,
+      "age": 30
+    },
+    {
+      "id": 3,
+      "age": 25
+    }
+  ]
+}' http://192.168.1.94:5001/joinDataframes
+```
+
+
 

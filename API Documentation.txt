@@ -1,0 +1,21 @@
+API Documentation
+This document provides an overview of the API endpoints and their functionalities.
+
+Base URL: http://192.168.1.94:5001
+
+Endpoint: /joinDataframes
+
+Method: POST
+Description: Join two dataframes based on a specified join type.
+Request Body:
+dataframe1: List of dictionaries representing the first dataframe.
+dataframe2: List of dictionaries representing the second dataframe.
+joinType: String representing the join type (leftJoin, innerJoin, fullOuterJoin, rightJoin).
+Response:
+Success: JSON response with the joined dataframe.
+Error: JSON response with an error message and corresponding status code.
+
+Error Responses
+
+400 Bad Request: Invalid request format or missing required fields.
+500 Internal Server Error: Server-side error occurred during the request processing.

@@ -1,0 +1,7 @@
+This folder contains one file test.py which is runing using the command 
+command: python -m test –config constants.ini
+where constants.ini file stores the HOST and PORT (that could be changed for not hard coding the script)
+there are 3 test cases one app_ini.py which gives actually output without error
+rest two error_invalidID the request where the ID is not passed in the dataframe it gives an error
+second one when the join type is invalid so these requests are runing using test.py file
+then there is a requirenments.txt file

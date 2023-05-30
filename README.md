@@ -47,7 +47,7 @@ import requests
 
 url = 'http://192.168.1.94:5001/joinDataframes'
 
-data = {
+payload = {
     "dataframe1": [
         {
             "id": 1,
@@ -61,20 +61,21 @@ data = {
     "dataframe2": [
         {
             "id": 1,
-            "age": 30
+            "age": 25
         },
         {
-            "id": 3,
-            "age": 25
+            "id": 2,
+            "age": 30
         }
-    ]
+    ],
+    "joinType": "leftJoin"
 }
 
-headers = {'Content-Type': 'application/json'}
+response = requests.post(url, json=payload)
 
-response = requests.post(url, json=data, headers=headers)
-
+print(response.status_code)
 print(response.json())
+
 
 ```
 

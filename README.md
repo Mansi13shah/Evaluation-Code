@@ -77,8 +77,4 @@ print(response.json())
 
 The API will perform the join operation on the specified common column and return the resulting joined dataframe as the response.
 
-# Documentation
-Additional documentation and resources:
 
-API Documentation 
-User Guide
